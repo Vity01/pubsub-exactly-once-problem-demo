@@ -14,8 +14,8 @@ public class DemoApplication implements CommandLineRunner {
 
 	private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 
-	private static final String PROJECT_ID = "cloud-lab-304213";
-	private static final String SUBSCRIPTION_NAME = "testTopic1-sub";
+	private static final String PROJECT_ID = "FILL_ME";
+	private static final String SUBSCRIPTION_NAME = "FILL_ME";
 	private static final String SUBSCRIPTION = String.format("projects/%s/subscriptions/%s", PROJECT_ID, SUBSCRIPTION_NAME);
 
 	final PubSubTemplate pubSubTemplate;
