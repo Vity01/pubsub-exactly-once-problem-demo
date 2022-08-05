@@ -19,9 +19,9 @@ Note the timestamps among messages, **it never reaches 10 minutes of waiting**:
 
 
 ### How to run the code & steps to reproduce problem
-- Create Topic and Subscription according to the screenshot above.
+- Create Topic and Subscription according to the screenshot above - ACK deadline 600s, Enabled Exactly-once delivery
 - Before running the code, please update `PROJECT_ID` and `SUBSCRIPTION_NAME` in the [code](/src/main/java/com/pubsub/exactlyonce/demo/DemoApplication.java) or set the command line parameter
-- run `gradlew bootRun` optionally `gradlew bootRun -Pargs=projects/$PROJECT_ID/subscriptions/$SUBSCRIPTION_NAME`
+- Run `gradlew bootRun` optionally `gradlew bootRun -Pargs=projects/$PROJECT_ID/subscriptions/$SUBSCRIPTION_NAME`
 - Publish simple message (plain text `HELLO`) to the Subscription you created in the first step 
 
 Related discussion on [StackOverflow](https://stackoverflow.com/questions/73076103/pub-sub-acknowledgement-deadline-is-ignored-when-used-exactly-once-delivery).
